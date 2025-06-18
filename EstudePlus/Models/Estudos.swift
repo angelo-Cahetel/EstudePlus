@@ -8,7 +8,7 @@
 import Foundation
 
 //MARK: - Objetivo de Estudo
-enum ObjetivoEsudo: String, CaseIterable, Identifiable, Codable {
+enum ObjetivoEstudo: String, CaseIterable, Identifiable, Codable {
     case enem = "ENEM"
     case concurso = "Concurso Público"
     case faculdade = "Faculdade"
@@ -91,11 +91,11 @@ struct Usuario: Identifiable, Codable {
     var id: UUID
     
     var nome: String
-    var objetivo: ObjetivoEsudo
+    var objetivo: ObjetivoEstudo
     var cronogramas: [Cronograma] = []
     var historicoDiario: [Date: Double] = [:] // Horas estudadas por dia
     
-    init(id: UUID = UUID(), nome: String, objetivo: ObjetivoEsudo, cronogramas: [Cronograma] = [], historicoDiario: [Date: Double] = [:]) {
+    init(id: UUID = UUID(), nome: String, objetivo: ObjetivoEstudo, cronogramas: [Cronograma] = [], historicoDiario: [Date: Double] = [:]) {
         self.id = id
         self.nome = nome
         self.objetivo = objetivo

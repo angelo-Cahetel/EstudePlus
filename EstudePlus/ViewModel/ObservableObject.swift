@@ -46,7 +46,7 @@ class EstudoMaisViewModel: ObservableObject {
     }
     
 //    MARK: - Cadastro/Atualização de Usuário
-    func criarOuAtualizarUsuario(nome: String, objetivo: ObjetivoEsudo) {
+    func criarOuAtualizarUsuario(nome: String, objetivo: ObjetivoEstudo) {
         if var usuarioExistente = usuario {
             usuarioExistente.nome = nome
             usuarioExistente.objetivo = objetivo
